@@ -4,98 +4,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-<style>
-body{
-  margin: 0;
-  padding: 0;
+  <style>
+    body{
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    nav{
+      background-color: lightseagreen;
+      margin: 10px;
+      padding: 3px;
+      text-decoration: none;
+      border-radius: 28px;
+    }
+    #slider {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
 }
-.Box{
-  background-color: slategray;
-  padding: 60px 30px;
-}
-  nav{
-    background-color: limegreen;
-    overflow: hidden;
-  }
-  nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li{
-    float: left;;
-  }
-  nav a{
-    display: block;
-    padding: 10px 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center
-  }
-  nav a:hover{
-    background-color: #b1b1b1;
-    color: black;
-    border-radius: 12px;
-    height: 20
-  }
-   
-   img{
-    border-radius: 49px;
-    margin: 1px;
-    border: 2px solid white;
-    
-  }
-  
-  main{
-    margin: 40px;
-    text-align: justify;
-  }
-  h2{
-    margin: 30px;
-  }
-  footer {
-    background-color:slategray ;
-    color: white;
-    padding: 30px;
-</style>
-<body>
-  <div class="Box">
-   <center> <img src="t-shirt.jpg" height="100px"><h4>Masterprinting.com<br>What's app No : 9518316802</h4></center>
-  
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-       <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <p>Best T-shirt design For Your
-    T-shirt Print Elevate your style with our custom T-shirt printing service, where your imagination meets fabric. Explore a spectrum of designs that mirror your personality and passions. Unleash your creativity today!</p>
-  </main>
-  <h2>T-shirt</h2>
-  <div class="box2">
-  <img src="logo2.jpeg" height="100px">
-    <img src="logo.jpeg" height="100px">
-      <img src="logo1.jpeg" height="100px">
-     </div>
-        <h2>Contact</h2>
-     <main>
-     
-     </main>
-     <footer>
-  <div class="contact-section">
-    <h3>Contact Us</h3>
-    <p>Email : <a href="mailto:info@example.com">rk5727248@gmail.com</a></p>
-    <p>Phone : (951) 831-6802</p>
-    <p>Address : 210 Street : Sardar Road Mualviganj chowk , City : Dhule, State: Maharashtra, Country : India</p>
-  </div>
-</footer>
 
+#slideImg {
+  width: 60%;
+  height: 70%;
+  margin: 70px;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 25px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+    nav a{
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      margin: 7px;
+    }
+    nav a:hover{
+      background-color: red;
+      color: black;
+    }
+     
+nav {
+      background-color: lightseagreen;
+      padding: 10px;
+      text-align: left;
+      border-radius: 28px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+nav a:hover{
+  background-color: #ddd;
+  color: black;
+ padding: 10px;
+}
+h1 {
+      color: black;
+      font-size: 12px;
+    }
+    main {
+      margin: 20px;
+    }
+    p {
+      color: #666;
+    }
+    h6{
+      color: black;
+    }
+    footer {
+      background-color: lightseagreen;
+      color: #;
+      padding: 20px;
+      text-align: center;
+    }
+
+      iframe{
+        height: 400px;
+        width: 100%;
+        border: 2px solid black;
+      }
+      h2{
+        margin: 20px;
+        font-size: 21px;
+      }
+      hr{
+        margin: 10px;
+        width: 60%;
+        color: red;
+      }
+      form{
+        margin: 20px;
+        border: inline;
+        padding: 10px;
+      }
+      .red{
+        background-color: limegreen;
+      }
+    h6{
+      text-align: center;
+      color: blue;
+      font-size: 20px;
+    }
+  </style>
+  <title>Dhule Master Printing</title>
+</head>
+
+<body>
+<nav>
+  <a href="index.html">Home</a>
+    <a href="#">Gallery</a>
+      <a href="#"></a>
+</nav>
+ <div id="slider">
+    <button id="prevBtn" onclick="changeSlide(-1)">&#10094;</button>
+    <img id="slideImg" src="logo.jpg" alt="Slider Image">
+    <img id="slideImg" src="logo8.jpg" alt="Slider Image">
+  <img id="slideImg" src="logo6.jpg" alt="Slider Image">
+   <img id="slideImg" src="logo3.jpg" alt="Slider Image">
+  <img id="slideImg" src="logo5.jpg" alt="Slider Image">
+  <img id="slideImg" src="log.jpg" alt="Slider Image">
+  <img id="slideImg" src="loge.jpg" alt="Slider Image">
+ <img id="slideImg" src="logo4.jpg" alt="Slider Image">
+ <img id="slideImg" src="lo.jpg" alt="Slider Image">
+    <button id="nextBtn" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+  <main>
+    <fieldset>
+      <legend><h3>Contacts</h3></legend>
+   
+      <h1>
+   Contact This :<br>
+   Shakeel Rangrez <br>
+   Phone No : 9422797973
+   </h1>
+   <hr>
+    </body>
+          <h1>
+   Contact This :<br>
+   Vakil Rangrez <br>
+   Phone no : 9325820404
+   </h1>
+
+   <hr>
+          <h1 style="color: seagreen">
+            <marquee width="35%" behavior="slide" direction=""><pre>Available</pre></marquee><br>
+            Contact This :<br>
+            Rizwan Rangrez <br>
+            Phone no : 9518316802
+          </h1>
+             </fieldset>
+          <hr>
+          <fieldset>
+            <legend><h3>Address</h3></legend>
+
+          <h5>210 Sardar Road Mualviganj Chowk Dhule Maharashtra</h5>
+          </fieldset>
+          <hr>
+          <fieldset>
+            
+          <legend><h3>Location</h3></legend>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.4027322127554!2d74.7760950757168!3d20.89611079232058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec5cd9f7016c1%3A0x210e3f2a09066ad3!2sMaster%20Printer!5e0!3m2!1sen!2sin!4v1685538686022!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </fieldset>
+          </main>
+      <script>
+    var slideIndex = 1;
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  var slides = document.getElementsByTagName("img");
+  
+  if (n > slides.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex - 1].style.display = "block";
+}
+
+showSlide(slideIndex);
+
+  </script>
 </body>
 
 </html>
